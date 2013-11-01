@@ -75,7 +75,7 @@ public class LKProgressDialog extends Dialog {
 	
 	public LKProgressDialog create() {
 		LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-		View layout = inflater.inflate(R.layout.progress_dialog_layout, null);
+		View layout = inflater.inflate(R.layout.layout_progress_dialog, null);
 		this.addContentView(layout, new LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT));
 		// set the dialog title
 		((TextView) layout.findViewById(R.id.title)).setText(title);

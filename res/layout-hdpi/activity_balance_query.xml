@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/titlebar" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="30dip"
+        android:background="@drawable/boder"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="10dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="刷银行卡" 
+                android:layout_centerVertical="true"/>
+
+            <!-- <ImageView
+                android:id="@+id/iv_swip_card"
+                android:layout_width="50dip"
+                android:layout_height="30dip"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/catalog_2_button_n" /> -->
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="5dip"
+            android:background="#666666" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="8dip" >
+
+            <TextView
+                style="@style/black_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="交易密码：" />
+
+            <EditText
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:maxLength="6"
+                android:password="true"
+                android:background="#00000000" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="* 支持所有银联借记卡"
+        style="@style/gray_14"
+        android:layout_marginLeft="25dip"
+        android:layout_marginTop="10dip"/>
+    
+    <Button android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_next"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:textSize="18dip"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:background="@drawable/login_button"/>
+
+</LinearLayout>

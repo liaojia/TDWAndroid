@@ -86,7 +86,7 @@ public class LKAlertDialog extends Dialog {
 	public LKAlertDialog create() {
 		LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		// instantiate the dialog with the custom Theme
-		View layout = inflater.inflate(R.layout.alert_dialog_layout, null);
+		View layout = inflater.inflate(R.layout.layout_alert_dialog, null);
 		this.addContentView(layout, new LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT));
 		// set the dialog title
 		((TextView) layout.findViewById(R.id.title)).setText(title);

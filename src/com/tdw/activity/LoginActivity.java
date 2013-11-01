@@ -27,9 +27,9 @@ public class LoginActivity extends BaseActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.login_activity);
+		setContentView(R.layout.activity_login);
 		
-		initTitleBar("登 录", false);
+//		initTitleBar("登 录", false);
 		userNameET = (EditText)this.findViewById(R.id.usernameET);
 		pwdET = (EditText)this.findViewById(R.id.pwdET);
 		
@@ -107,18 +107,19 @@ public class LoginActivity extends BaseActivity {
 	}
 	
 	private void loginAction(){
-//		Intent intent = new Intent(this, CatalogActivity.class);
-//		startActivity(intent);
-//		if(checkValue()){
-//			
-//			Editor editor = ApplicationEnvironment.getInstance().getPreferences().edit();
-//			editor.putBoolean(Constant.kISREMEBER, isRemember);
-//			editor.commit();
-//		}
+		Intent intent = new Intent(this, MainActivity.class);
+		startActivity(intent);
+		if(checkValue()){
+			
+			Editor editor = ApplicationEnvironment.getInstance().getPreferences().edit();
+			editor.putBoolean(Constant.kISREMEBER, isRemember);
+			editor.commit();
+		}
 	}
 	
 	private void registerAction(){
-		
+		Intent intent = new Intent(this, RegisterActivity.class);
+		startActivity(intent);
 	}
 	
 	private void getPwdAction(){

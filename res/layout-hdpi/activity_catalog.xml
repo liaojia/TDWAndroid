@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login_bg"
+    >
+
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/titlebar" />
+
+    
+    <!-- 中间动态加载View -->
+    <ScrollView android:measureAllChildren="true" android:id="@+id/containerBody"
+        android:layout_weight="1" android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/topbar">
+    </ScrollView>
+    
+    <RelativeLayout
+        android:layout_width="100dip"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        >
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/icon_home" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/level2"
+        android:layout_width="180dip"
+        android:layout_height="90dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+         >
+
+        <ImageButton
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dip"
+            android:background="@drawable/icon_search" />
+
+        <ImageButton
+            android:id="@+id/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="6dip"
+            android:background="@drawable/icon_menu" />
+
+        <ImageButton
+            android:id="@+id/myyouku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dip"
+            android:background="@drawable/icon_myyouku" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

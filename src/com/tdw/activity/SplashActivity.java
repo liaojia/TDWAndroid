@@ -18,7 +18,7 @@ public class SplashActivity extends BaseActivity {
 		super.onCreate(savedInstanceState);
 	    getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN); //设置全屏
         
-        setContentView(R.layout.splash_activity);
+        setContentView(R.layout.activity_splash);
         
         new SplashTask().execute();
 	}

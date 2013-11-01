@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/titlebar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/image_recharge_next_bg"
+        android:orientation="vertical"
+        android:paddingTop="30dip" 
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip">
+        
+	<!-- 商品名称： -->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/black_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商品名称：" />
+
+            <TextView
+                android:id="@+id/name_goods"
+                style="@style/black_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="帐户充值" />
+        </RelativeLayout>
+
+        <com.tdw.view.DashedLine
+            android:layout_marginTop="8dip"
+            android:layout_width="wrap_content"
+            android:layout_height="15dip" />
+        
+        <!-- 充值帐户 -->
+        <RelativeLayout
+            android:layout_marginTop="8dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/black_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="充值帐户：" />
+
+            <TextView
+                android:id="@+id/name_account"
+                style="@style/black_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="移动， 15011302090" />
+        </RelativeLayout>
+
+        <!-- 充值面额 -->
+        <com.tdw.view.DashedLine
+            android:layout_marginTop="8dip"
+            android:layout_width="wrap_content"
+            android:layout_height="15dip" />
+        
+        <RelativeLayout
+            android:layout_marginTop="8dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/black_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="充值面额：" />
+
+            <TextView
+                android:id="@+id/name_money"
+                style="@style/black_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="1000" />
+        </RelativeLayout>
+
+        <com.tdw.view.DashedLine
+            android:layout_marginTop="8dip"
+            android:layout_width="wrap_content"
+            android:layout_height="15dip" />
+        
+        <!-- 刷卡金额 -->
+        <RelativeLayout
+            android:layout_marginTop="8dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/black_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="刷卡金额：" />
+
+            <TextView
+                android:id="@+id/name_money"
+                style="@style/orange_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="￥980.00元" />
+        </RelativeLayout>
+
+        <com.tdw.view.DashedLine
+            android:layout_marginTop="8dip"
+            android:layout_width="wrap_content"
+            android:layout_height="15dip" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_commit"
+        style="@style/white_20"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="25dip"
+        android:background="@drawable/register_button"
+        android:text="提交" />
+
+</LinearLayout>
