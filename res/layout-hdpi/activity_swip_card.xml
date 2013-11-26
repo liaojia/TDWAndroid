@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/titlebar" />
+    <ImageView android:id="@+id/iv_swip" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/swip"
+        android:layout_marginTop="15dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_below="@id/topbar"/>
+    
+    <TextView android:id="@+id/tv_swip" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请按[刷卡]按钮开始交易"
+        android:textSize="18sp"
+        android:layout_below="@id/iv_swip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dip"/>
+    <Button android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_confirm"
+        android:text="刷卡"
+        android:textSize="18dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/button_bg"
+        android:layout_below="@id/tv_swip"/>
+
+</RelativeLayout>

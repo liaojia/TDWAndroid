@@ -26,6 +26,7 @@
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.WRITE_CONTACTS" />
 
+    <uses-permission android:name="android.permission.VIBRATE" />
     <application
         android:name=".TDWApplication"
         android:allowBackup="true"
@@ -59,7 +60,6 @@
             android:windowSoftInputMode="stateHidden|adjustPan" >
             <intent-filter>
                 <action android:name="com.tdw.RegisterActivity" />
-
                 <data android:scheme="info" />
             </intent-filter>
         </activity>
@@ -70,7 +70,6 @@
             android:windowSoftInputMode="stateHidden|adjustPan" >
             <intent-filter>
                 <action android:name="com.tdw.BalanceQueryActivity" />
-
                 <data android:scheme="info" />
             </intent-filter>
         </activity>
@@ -81,7 +80,6 @@
             android:windowSoftInputMode="stateHidden|adjustPan" >
             <intent-filter>
                 <action android:name="com.tdw.MainActivity" />
-
                 <data android:scheme="info" />
             </intent-filter>
         </activity>
@@ -92,7 +90,6 @@
             android:windowSoftInputMode="stateHidden|adjustPan" >
             <intent-filter>
                 <action android:name="com.tdw.BalanceResultActivity" />
-
                 <data android:scheme="info" />
             </intent-filter>
         </activity>
@@ -103,7 +100,6 @@
             android:windowSoftInputMode="stateHidden|adjustPan" >
             <intent-filter>
                 <action android:name="com.tdw.PayActivity" />
-
                 <data android:scheme="info" />
             </intent-filter>
         </activity>
@@ -114,7 +110,6 @@
             android:windowSoftInputMode="stateHidden|adjustPan" >
             <intent-filter>
                 <action android:name="com.tdw.GlideActivity" />
-
                 <data android:scheme="info" />
             </intent-filter>
         </activity>
@@ -125,7 +120,6 @@
             android:windowSoftInputMode="stateHidden|adjustPan" >
             <intent-filter>
                 <action android:name="com.tdw.BusinessActivity" />
-
                 <data android:scheme="info" />
             </intent-filter>
         </activity>
@@ -136,7 +130,6 @@
             android:windowSoftInputMode="stateHidden|adjustPan" >
             <intent-filter>
                 <action android:name="com.tdw.ToolActivity" />
-
                 <data android:scheme="info" />
             </intent-filter>
         </activity>
@@ -147,7 +140,6 @@
             android:windowSoftInputMode="stateHidden|adjustPan" >
             <intent-filter>
                 <action android:name="com.tdw.CounterActivity" />
-
                 <data android:scheme="info" />
             </intent-filter>
         </activity>
@@ -158,7 +150,6 @@
             android:windowSoftInputMode="stateHidden|adjustPan" >
             <intent-filter>
                 <action android:name="com.tdw.RechargeActivity" />
-
                 <data android:scheme="info" />
             </intent-filter>
         </activity>
@@ -169,7 +160,6 @@
             android:windowSoftInputMode="stateHidden|adjustPan" >
             <intent-filter>
                 <action android:name="com.tdw.ContactsActivity" />
-
                 <data android:scheme="info" />
             </intent-filter>
         </activity>
@@ -181,7 +171,105 @@
             android:windowSoftInputMode="stateHidden|adjustPan" >
             <intent-filter>
                 <action android:name="com.tdw.RechargeNextActivity" />
-
+                <data android:scheme="info" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".activity.SwipCardActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+            <intent-filter>
+                <action android:name="com.tdw.SwipCardActivity" />
+                <data android:scheme="info" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".activity.SignBillActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+            <intent-filter>
+                <action android:name="com.tdw.SignBillActivity" />
+                <data android:scheme="info" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".activity.LoyaltyCardQueryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+            <intent-filter>
+                <action android:name="com.tdw.LoyaltyCardQueryActivity" />
+                <data android:scheme="info" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".activity.ModifyPwdActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+            <intent-filter>
+                <action android:name="com.tdw.ModifyPwdActivity" />
+                <data android:scheme="info" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".activity.SignInActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+            <intent-filter>
+                <action android:name="com.tdw.SignInActivity" />
+                <data android:scheme="info" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".activity.SettlementActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+            <intent-filter>
+                <action android:name="com.tdw.SettlementActivity" />
+                <data android:scheme="info" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".activity.BusinessManInfoActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+            <intent-filter>
+                <action android:name="com.tdw.BusinessManInfoActivity" />
+                <data android:scheme="info" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".activity.LoyaltyRechargeActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+            <intent-filter>
+                <action android:name="com.tdw.LoyaltyRechargeActivity" />
+                <data android:scheme="info" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".activity.HandSignActivity"
+            android:exported="true"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+            <intent-filter>
+                <action android:name="com.tdw.HandSignActivity" />
                 <data android:scheme="info" />
             </intent-filter>
         </activity>

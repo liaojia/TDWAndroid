@@ -1,11 +1,8 @@
 package com.tdw.activity;
 
-import java.util.ArrayList;
-
-import com.tdw.R;
-
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
@@ -14,7 +11,6 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.text.TextPaint;
 import android.util.Log;
-import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -27,7 +23,8 @@ import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import com.tdw.R;
 
 @SuppressLint("CommitPrefEdits")
 public class CounterActivity extends BaseActivity {
@@ -61,6 +58,8 @@ public class CounterActivity extends BaseActivity {
 		displayPadLayout = (LinearLayout) this.findViewById(R.id.displayPadLayout);
 		backBtn = (Button)this.findViewById(R.id.btn_back);
 		backBtn.setOnClickListener(listener);
+		Button btn_confirm = (Button)this.findViewById(R.id.btn_confirm);
+		btn_confirm.setOnClickListener(listener);
 		
 		this.refreshDisplayPad(inputString);
 
@@ -148,6 +147,9 @@ public class CounterActivity extends BaseActivity {
 		public void onClick(View v) {
 			if(v.getId() == R.id.btn_back){
 				finish();
+			}else if(v.getId() == R.id.btn_confirm){
+				Intent intent0 = new Intent(CounterActivity.this, SwipCardActivity.class); 
+				CounterActivity.this.startActivity(intent0);
 			}else{
 				int tag = (Integer)v.getTag();
 				switch(tag){
@@ -165,7 +167,7 @@ public class CounterActivity extends BaseActivity {
 						return;
 					pressNumericButton(tag);
 					break;
-				case 10://dot
+				case 10://小数点
 					
 					break;
 				case 11://删除

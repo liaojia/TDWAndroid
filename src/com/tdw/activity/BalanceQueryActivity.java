@@ -12,7 +12,6 @@ import android.widget.TextView;
 import com.tdw.R;
 
 public class BalanceQueryActivity extends BaseActivity {
-	private Button button;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

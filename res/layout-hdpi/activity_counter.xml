@@ -2,7 +2,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/counter_bg"
     android:orientation="vertical" >
 
     <include
@@ -11,43 +10,51 @@
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="5dip"
-        android:layout_marginRight="5dip"
-        android:layout_marginTop="5dip"
-        android:background="@drawable/showmoney_bg" >
+        android:layout_height="fill_parent"
+        android:background="@drawable/counter_bg"
+        android:orientation="vertical" >
 
         <LinearLayout
-            android:id="@+id/displayPadLayout"
-            android:layout_width="match_parent"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginRight="20dip"
-            android:layout_gravity="center_vertical"
-            android:gravity="center_vertical|right"
-            android:orientation="horizontal" >
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/showmoney_bg" >
+
+            <LinearLayout
+                android:id="@+id/displayPadLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dip"
+                android:gravity="center_vertical|right"
+                android:orientation="horizontal" >
+            </LinearLayout>
         </LinearLayout>
+
+        <GridView
+            android:id="@+id/gridveiw"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="7dip"
+            android:horizontalSpacing="0dip"
+            android:numColumns="3"
+            android:verticalSpacing="0dip" />
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/pay_confirm_btn"
+            android:text="点击支付"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
     </LinearLayout>
-
-    <GridView
-        android:id="@+id/gridveiw"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="5dip"
-        android:layout_marginRight="5dip"
-        android:layout_marginTop="7dip"
-        android:horizontalSpacing="0dip"
-        android:numColumns="3"
-        android:verticalSpacing="0dip" />
-
-    <Button
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="5dip"
-        android:layout_marginRight="5dip"
-        android:layout_marginTop="15dip"
-        android:background="@drawable/pay_confirm_btn"
-        android:text="点击支付"
-        android:textColor="@color/white"
-        android:textSize="19sp" />
 
 </LinearLayout>

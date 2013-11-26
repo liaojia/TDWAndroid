@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/titlebar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="20dip"
+        android:orientation="vertical" >
+
+        <com.tdw.view.PasswordWithLabelView
+            android:id="@+id/et_old_pwd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dip"
+            android:paddingTop="8dip" />
+
+        <com.tdw.view.PasswordWithLabelView
+            android:id="@+id/et_new_pwd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:paddingTop="8dip" />
+        
+        <com.tdw.view.PasswordWithLabelView
+            android:id="@+id/et_again_pwd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:paddingTop="8dip" />
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/login_button"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="18dip" />
+    </LinearLayout>
+
+</LinearLayout>

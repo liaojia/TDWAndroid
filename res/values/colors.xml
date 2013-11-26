@@ -9,5 +9,5 @@
 	<color name="blue">#2e89e0</color>
     <color name="orange">#FF6600</color>
     <color name="clear">#00000000</color>
-
+	<color name="lightblack">#ff202020</color>
 </resources>

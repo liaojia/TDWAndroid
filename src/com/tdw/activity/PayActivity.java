@@ -88,7 +88,7 @@ public class PayActivity extends AbsSubActivity {
 		public void onClick(View v) {
 			switch ((Integer)v.getTag()) {
 			case 0:
-				Intent intent0 = new Intent(PayActivity.this, BalanceQueryActivity.class);
+				Intent intent0 = new Intent(PayActivity.this, CounterActivity.class);
 				startActivity(intent0);
 				break;
 			case 1:
